@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:customtv="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/footer"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@drawable/layout_process"
+    android:gravity="center_vertical"
+    android:padding="10dp">
+
+    <ProgressBar
+        android:id="@+id/progbr"        
+        style="@android:attr/progressBarStyleSmallInverse"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_centerInParent="true"
+        android:layout_centerVertical="true" >
+    </ProgressBar>
+
+    <com.sharmas.golf_android.common.CustomTextView
+        android:id="@+id/progrtxt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/progbr"
+        android:text="@string/loading"
+        android:padding="10dp"
+        android:layout_marginTop="15dp"
+        android:gravity="center"
+        android:textColor="@android:color/black"
+        customtv:fontType="4"/>
+
+</RelativeLayout>

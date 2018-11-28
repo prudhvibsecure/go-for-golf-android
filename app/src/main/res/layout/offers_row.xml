@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:customtv="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="5dp"
+    android:layout_marginRight="5dp"
+    android:padding="2dp">
+
+    <LinearLayout
+        android:id="@+id/offerll"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <com.sharmas.golf_android.common.CustomTextView
+            android:id="@+id/off_name"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="fill"
+            android:layout_weight="1.2"
+            android:gravity="left"
+            android:padding="5dp"
+            android:text="Row_offer"
+            android:textColor="@color/white"
+            android:textColorHint="@color/white"
+            android:textSize="14dp"
+            customtv:fontType="4" />
+
+        <com.sharmas.golf_android.common.CustomTextView
+            android:id="@+id/off_expdate"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="fill"
+            android:layout_weight="1"
+            android:gravity="right"
+            android:padding="5dp"
+            android:text="Row_offer"
+            android:textColor="@color/white"
+            android:textColorHint="@color/white"
+            android:textSize="12dp"
+            customtv:fontType="4" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/offerll"
+        android:orientation="vertical">
+
+        <com.sharmas.golf_android.common.CustomTextView
+            android:id="@+id/off_des"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="fill"
+            android:padding="8dp"
+            android:text="Row_offer"
+            android:textColor="@color/white"
+            android:textColorHint="@color/white"
+            android:textSize="12dp"
+            customtv:fontType="4" />
+
+        <com.sharmas.golf_android.common.CustomTextView
+            android:id="@+id/off_reedeem"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#FFBB02"
+            android:gravity="center"
+            android:padding="8dp"
+            android:text="REDEEM"
+            android:textColor="@color/white"
+            android:textSize="12dp"
+            customtv:fontType="4" />
+    </LinearLayout>
+</RelativeLayout>

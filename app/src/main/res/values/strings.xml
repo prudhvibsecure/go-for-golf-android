@@ -1,0 +1,46 @@
+<resources>
+    <string name="app_name">Go For Golf</string>
+
+    <string name="browsefile">BROWSE FOR FREE</string>
+    <string name="member">MEMBERSHIP</string>
+    <string name="register">REGISTER</string>
+    <string name="login">LOG IN</string>
+    <string name="username">USERNAME (EMAIL)</string>
+    <string name="password">PASSWORD</string>
+    <string name="cpassword">CONFIRM PASSWORD</string>
+    <string name="npass">NEW PASSWORD</string>
+    <string name="remember">REMEMBER ME</string>
+    <string name="forgetpass">FORGOT PASSWORD</string>
+    <string name="email">EMAIL</string>
+    <string name="post">POSTCODE</string>
+    <string name="cost">$ 49</string>
+    <string name="buy">BUY NOW</string>
+    <string name="submit">SUBMIT</string>
+    <string name="payment">Subscription</string>
+
+    <string name="lvalid1">Please Enter Username/Email</string>
+    <string name="lvalid2">Please Enter Password</string>
+    <string name="lvalid4">Please Enter Email</string>
+    <string name="lvalid3">Please Enter Confirm Password</string>
+    <string name="loading">Please Wait...</string>
+    <string name="psmbc">Password strength must be 8&#8211;16 characters</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <!--network srtings-->
+
+    <string name="isr">Invalid server response</string>
+    <string name="sct">Server connection timeout.!</string>
+    <string name="snr1">Server not reachable.!</string>
+    <string name="iurl">Invalid URL</string>
+    <string name="snr2">Server not reachable.!!</string>
+    <string name="snr3">Server not reachable.!!!</string>
+    <string name="isres">Invalid server response</string>
+    <string name="nipcyns">No Internet, Please check your network settings</string>
+    <string name="settings">Settings</string>
+    <string name="desc"><u>DESCRIPTION</u></string>
+    <string name="contact"><u>CONTACT DETAILS</u></string>
+    <string name="spldetails">SPECIAL OFFERS</string>
+    <string name="offersdetails">GENERAL DISCOUNT OFFERS</string>
+</resources>

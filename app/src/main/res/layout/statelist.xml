@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:customtv="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@mipmap/gfg_grass"
+    android:orientation="vertical">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#66000000"
+        android:minHeight="?attr/actionBarSize"
+        app:theme="@style/ThemeOverlay.AppCompat.Light">
+
+        <ImageView
+            android:id="@+id/logo"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:contentDescription="@string/app_name"
+            android:gravity="center_vertical"
+            android:scaleType="fitCenter"
+            android:padding="5dp"
+            android:src="@mipmap/gfg_logo" />
+
+    </android.support.v7.widget.Toolbar>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/toolbar"
+        android:orientation="vertical">
+
+        <com.sharmas.golf_android.common.CustomTextView
+            android:id="@+id/title_info"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:gravity="center"
+            android:padding="8dp"
+            android:text="WHERE DO YOU WANT TO PLAY?"
+            android:textColor="@color/white"
+            android:textSize="16dp"
+            android:layout_marginTop="20dp"
+            android:textStyle="bold"
+            android:visibility="gone"
+            customtv:fontType="4" />
+
+        <View
+            android:id="@+id/view1"
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:background="@color/white"
+            android:visibility="gone" />
+
+        <com.sharmas.golf_android.common.CustomTextView
+            android:id="@+id/title_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:gravity="center"
+            android:padding="8dp"
+            android:textColor="@color/white"
+            android:textSize="20dp"
+            android:layout_marginTop="20dp"
+            android:textAllCaps="true"
+            android:visibility="gone"
+            customtv:fontType="5" />
+
+        <View
+            android:id="@+id/view2"
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:background="@color/white"
+            android:visibility="gone" />
+
+        <LinearLayout
+            android:id="@+id/liner_states"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginLeft="20dp"
+            android:visibility="gone">
+
+            <EditText
+                android:id="@+id/get_laocation_text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginLeft="10dp"
+                android:background="@drawable/background_drawable"
+                android:drawableRight="@mipmap/ic_search_loc"
+                android:hint="Current Location"
+                android:imeOptions="actionSearch|actionGo"
+                android:padding="15dp"
+                android:singleLine="true"
+                android:cursorVisible="false"
+                android:enabled="false"
+                android:editable="false"
+                android:textColor="@color/white"
+                android:textColorHint="@color/textGray" />
+
+            <AutoCompleteTextView
+                android:id="@+id/get_location"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:background="@drawable/background_drawable"
+                android:drawableRight="@mipmap/ic_search_loc"
+                android:hint="Search Location"
+                android:layout_marginRight="10dp"
+                android:layout_marginLeft="10dp"
+                android:imeOptions="actionSearch|actionGo"
+                android:padding="15dp"
+                android:singleLine="true"
+                android:textColor="@color/white"
+                android:textColorHint="@color/textGray" />
+        </LinearLayout>
+
+        <com.sharmas.golf_android.common.CustomTextView
+            android:id="@+id/kms"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:gravity="center"
+            android:padding="5dp"
+            android:text="WITHIN 25Km"
+            android:textColor="@color/white"
+            android:textSize="12dp"
+            android:textStyle="normal"
+            android:visibility="gone"
+            customtv:fontType="4" />
+
+        <android.support.v4.widget.SwipeRefreshLayout
+            android:id="@+id/swipeRefreshLayout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ListView
+                android:id="@+id/states_list"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:padding="10dp"
+                android:scrollbars="none"/>
+        </android.support.v4.widget.SwipeRefreshLayout>
+
+    </LinearLayout>
+
+    <com.sharmas.golf_android.common.CustomTextView
+        android:id="@+id/no_data"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:gravity="center"
+        android:text="No Items Found"
+        android:textColor="@color/white"
+        android:textSize="16dp"
+        android:textStyle="bold"
+        android:visibility="gone"
+        customtv:fontType="4" />
+
+</RelativeLayout>

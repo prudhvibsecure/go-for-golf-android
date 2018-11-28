@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="bs_dark">#3F51B5</color>
+
+    <color name="colorAccent">#FF4081</color>
+
+    <color name="orange">#FF6600</color>
+    <color name="red">#FF0000</color>
+    <color name="settings_gray">#4A4A4A</color>
+    <color name="colorPrimary11">#088A4B</color>
+    <color name="colorPrimary">#000</color>
+    <color name="colorPrimaryDark">#000</color>
+    <color name="white">#fff</color>
+
+    <color name="semi_white">#80ffffff</color>
+    <color name="textGray">#BEBEBE</color>
+    <color name="mailreadcolor">#DEDEDE</color>
+    <color name="verylite_grey">#E1E1E1</color>
+    <color name="bs_blue">#12A3FF</color>
+    <color name="lightblack">#4F4B50</color>
+    <color name="lightwhite">#BDC7D8</color>
+    <color name="transparent_gray">#80363636</color>
+
+</resources>

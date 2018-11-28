@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:customtv="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <com.sharmas.golf_android.common.CustomTextView
+        android:id="@+id/title_aminit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_margin="10dp"
+        android:gravity="center"
+        android:padding="5dp"
+        android:text="AMENITIES"
+        android:textColor="@color/white"
+        android:textColorHint="@color/white"
+        android:textSize="16dp"
+        customtv:fontType="5" />
+
+    <ListView
+        android:id="@+id/list_aminites"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:layout_below="@+id/title_aminit"
+        android:dividerHeight="10sp"
+        android:scrollbars="none" />
+
+    <com.sharmas.golf_android.common.CustomTextView
+        android:id="@+id/spoff_viewmore"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_gravity="center"
+        android:layout_margin="10dp"
+        android:layout_weight=".2"
+        android:gravity="center"
+        android:padding="5dp"
+        android:text="No Offers Found"
+        android:textColor="@color/white"
+        android:textColorHint="@color/white"
+        android:textSize="12dp"
+        android:visibility="gone"
+        customtv:fontType="4" />
+
+</RelativeLayout>

@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <AutoCompleteTextView
+        android:id="@+id/get_laocation_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="2dp"
+        android:background="@drawable/background_drawable"
+        android:hint="Current Location"
+        android:padding="5dp"
+        android:singleLine="true"
+        android:textColor="@color/white"
+        android:textColorHint="@color/textGray" />
+
+    <AutoCompleteTextView
+        android:id="@+id/get_bustype"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="2dp"
+        android:background="@drawable/background_drawable"
+        android:hint="Search Location"
+        android:padding="5dp"
+        android:singleLine="true"
+        android:textColor="@color/white"
+        android:imeOptions="actionGo"
+        android:textColorHint="@color/textGray" />
+</LinearLayout>
